@@ -109,13 +109,14 @@ hr{
 
 .intro-wrapper{
     border: 1px solid grey;
+    border-bottom: none;
     border-radius: 5px 5px 0 0;
-    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    /* -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
-    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75); */
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 75%;
+    height: 25%;
     grid-template-areas: 
         'top-left-wrapper top-right-wrapper'
         'left-column right-column'   
@@ -166,4 +167,17 @@ hr{
     
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+.middle-wrapper{
+    /* background-color: rgb(145, 155, 198); */
+    /* opacity: 50%; */
+    border: 1px solid grey;
+    /* border-bottom: none; */
+    border-radius: 5px 5px 0 0;
+    height: 25%;
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    left: 50%;
 }
