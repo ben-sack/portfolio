@@ -33,3 +33,12 @@ function reveal4() {
     x.style.display = "none";
   }
 }
+
+function revealBackground() {
+  var x = document.getElementById("canvas");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}

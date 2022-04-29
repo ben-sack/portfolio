@@ -2,6 +2,7 @@ body{
     padding: 0;
     margin: 0;
     overflow: hidden;
+    background-color: #f2ebbf;
 }
 h1 {font-size: 56px;}
 
@@ -48,13 +49,15 @@ hr{
 
 
 
-.canvas_wrapper{
+.canvas-wrapper{
     z-index: -1;
     position: absolute;
+    overflow: hidden;
+    margin: 0;
 }
 
 .s1{
-    overflow: auto;
+    overflow: hidden;
     z-index: 0;
     position: absolute;
     top: 0;
@@ -75,6 +78,7 @@ hr{
 }
 
 .greeting-wrapper{
+    overflow: hidden;
     display: grid;
     min-height: 10em;
     text-align: top;
@@ -109,6 +113,7 @@ hr{
 
 .intro-wrapper{
     border: 1px solid grey;
+    overflow: hidden;
     border-bottom: none;
     border-radius: 5px 5px 0 0;
     /* -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
@@ -116,7 +121,7 @@ hr{
     box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75); */
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 25%;
+    height: 40%;
     grid-template-areas: 
         'top-left-wrapper top-right-wrapper'
         'left-column right-column'   
@@ -175,9 +180,10 @@ hr{
     border: 1px solid grey;
     /* border-bottom: none; */
     border-radius: 5px 5px 0 0;
-    height: 25%;
+    height: 100%;
     width: 100vw;
     position: relative;
     margin-left: -50vw;
     left: 50%;
+    overflow: hidden;
 }
