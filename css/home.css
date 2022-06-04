@@ -1216,7 +1216,7 @@ img {
  .work__container{
   /* grid-template-columns: repeat(3, 1fr); */
   column-gap: 5rem;
-  padding-top: 2rem;
+  margin-top: 0;
   justify-content: center;
   padding-top: 0;
  }
@@ -1225,7 +1225,7 @@ img {
   margin-right: auto;
   margin-bottom: auto;
   padding-top: 5%;
-  margin-top: 20rem;
+  /* margin-top: 20rem; */
 }
 .section-title {
   position: relative;

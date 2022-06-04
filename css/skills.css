@@ -103,6 +103,7 @@
 .page__title{
     margin-left: 18rem;
 }
+
 @media screen and (min-width: 768px){
     .skills__container {
         row-gap: 0;
@@ -110,6 +111,7 @@
         justify-content: center;
         margin-top: 5rem;
         padding: 2rem;
+        margin-top: 10rem;
     }
 
     .popup_container{
