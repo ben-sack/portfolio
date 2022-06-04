@@ -586,7 +586,6 @@ img {
 } */
 
 .bd-grid {
-  margin-top: 25%;
   max-width: 1024px;
   display: grid;
   justify-items: center;
@@ -1226,7 +1225,7 @@ img {
   margin-right: auto;
   margin-bottom: auto;
   padding-top: 5%;
-  margin-top: 1vh;
+  margin-top: 20rem;
 }
 .section-title {
   position: relative;

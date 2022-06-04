@@ -2,7 +2,16 @@
 const navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),
     navClose = document.getElementById('nav-close')
+/*===== POPUP =====*/
 
+let popup = document.getElementById("popup");
+
+function openPopup(){
+    popup.classList.add("open-popup");
+}
+function closePopup(){
+    popup.classList.remove("open-popup");
+}
 
 /*===== MENU SHOW =====*/
 /* Validate if constant exists */
@@ -111,3 +120,4 @@ const sr = ScrollReveal({
 sr.reveal('.welcome__content, .arrows',{}); 
 sr.reveal('.about__description, .work__img',{interval: 100}); 
 sr.reveal('.skills__img',{interval: 100}); 
+
