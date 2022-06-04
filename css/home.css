@@ -834,47 +834,6 @@ img {
   position: absolute;
   bottom: 0;
   width: 100%;
-  colo
-}
-
-.footer__container{
-  row-gap: 0;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.footer__bg{
-  background-color: black;
-  padding: 1rem 0 2rem;
-}
-
-.footer__title{
-  font-size: var(--h1-font-size);
-  /* margin-bottom: var(--mb-0-25); */
-}
-
-.footer__subtitle{
-  font-size: var(--smaller-font-size);
-}
-
-.footer__links{
-  display: flex;
-  flex-direction: column;
-  row-gap: 1rem;
-  text-align: right;
-  align-items: center;
-}
-
-.footer__link{
-  color: var(--first-color-lighter);
-}
-
-.footer__social{
-  font-size: 1.2rem;
-  margin-right: var(--mb-1-5);
-}
-
-footer__social:hover{
-  color: var(--first-color-lighter);
 }
 
 .footer__copy{
@@ -886,13 +845,6 @@ footer__social:hover{
   padding-bottom: 1rem;
   position: fixed;
   width: 100%
-}
-
-.footer__title,
-.footer__subtitle,
-.footer__link,
-.footer__social{
-  color: white
 }
 
 /*========== SCROLL BAR ==========*/

@@ -45,7 +45,9 @@
 .work__title{
     color: gray
 }
-
+.page__title{
+    margin-left: 18rem;
+}
 @media screen and (min-width: 1024px){
     /* .section{
         overflow: hidden;
@@ -64,5 +66,9 @@
     }
     .nav__list{
         grid-template-columns: 1fr;
+    }
+    .page__title{
+        font-size: 20px;
+        margin-left: 1.2rem;
     }
 }
