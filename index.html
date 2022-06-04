@@ -1,39 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ben</title>
-    <link rel="stylesheet" href="/css/landing.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Poppins:wght@400;500;600&family=Rubik+Glitch&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Rubik+Glitch&display=swap');
-    </style>
-</head>
-<body>
-    <header class="header" id="header">
-        <nav class="nav container">
-            <div class="nav__btns">
-                <!-- Theme change button -->
-                <i class="uil uil-moon change-theme" id="theme-button"></i>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            </div>
-        </nav>
-    </header>
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="/css/home.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Poppins:wght@400;500;600&family=Rubik+Glitch&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Rubik+Glitch&display=swap');
+        </style>
+        <title>Portfolio</title>
+    </head>
+    <body style="overflow: hidden;">
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo"><h1 class="title">b</h1></a>
+
+                <nav class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="uil uil-user nav__icon"></i> who am i
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="uil uil-message nav__icon"></i> contact
+                            </a>
+                        </li>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </nav>
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+                
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section">
+                <div class="home__social">
+                    <a href="https://linkedin.com/" class="home__social-icon">
+                        <i class="uil uil-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/0xSizz" class="home__social-icon">
+                        <i class="uil uil-twitter"></i>
+                    </a>
+                    <a href="https://github.com/" class="home__social-icon">
+                        <i class="uil uil-github"></i>
+                    </a>
+                </div>
+
+                <div class="welcome">
+                    <!-- <p id="welcome__text">Hi</p>
+                    <p id="welcome__subtitle">its pretty cool you're here...</p> -->
+                    <!-- <p id="welcome__subtitle2">possible 3d prompt</p> -->
+                    <div class="welcome__page">
+                        <p class="welcome__content">
+                            ben sack.
+                        </p>
+                    </div>
+                    <div class="mouse_scroll" id="scrolldown">
+
+                        <!-- <div class="mouse">
+                            <div class="wheel"></div>
+                        </div> -->
+                        <div class="arrows">
+                            <a href="#about">
+                                <span class="m_scroll_arrows unu"></span>
+                                <span class="m_scroll_arrows doi"></span>
+                                <span class="m_scroll_arrows trei"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
 
 
-    <div class="landing" data-tilt data-tilt data-tilt-reverse="true" data-tilt-max="40" data-tilt-full-page-listening>
-        <a href="/home/"><h1 class="title">BEN</h1></a>
-    </div>
 
-    <div style="position: absolute; bottom:10px;">
-        <footer>
+
+            </section>
+            
+            <section class="about section" id="about">
+
+                <div class="about__title">
+                    <span style="font-size: 1.5rem;">who am i</span>
+                </div>
+                <div class="about__description">
+                    <p>a full-stack engineer living in venice, ca</p>
+                    <br>
+                    <p style="padding-top: 0; font-size: 0.69rem;">*this site is a never ending wip</p>
+                    <br>
+                </div>
+                <div class="work__container bd-grid">
+                    
+                    <a href="/skills/" class="work__img" data-tilt data-tilt-reverse="true" data-tilt-max="20">
+                        <img src="/img/icons/skills.png" alt="">
+                    </a>
+                    <a href="" class="work__img" data-tilt data-tilt-max="20">
+                        <img src="/img/icons/res.png" alt="">
+                    </a>
+                    <a href="" class="work__img" data-tilt data-tilt-reverse="true" data-tilt-max="20">
+                        <img src="/img/icons/gallery.png">
+                    </a>
+                </div>
+
+                <!-- <div style="display: none;" class="text__container bd-grid">
+                    <a href="" class="work__img" data-tilt data-tilt-reverse="true" data-tilt-max="20">
+                        <img src="/img/arrow1.png" alt="">
+                    </a>
+                    <a href="" class="work__img" data-tilt data-tilt-max="20">
+                        <img src="/img/arrow1.png" alt="">
+                    </a>
+                    <a href="" class="work__img" data-tilt data-tilt-reverse="true" data-tilt-max="20">
+                        <img src="/img/arrow2.png" alt="">
+                    </a>
+                </div> -->
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
             <p class="footer__copy">&#169; Sack </p>
         </footer>
-    </div>
-    <script src="/js/darktheme.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
-</body>
+
+        <!--==================== SWIPER JS ====================-->
+        <script src="/js/swiper-bundle.min.js"></script>
+    
+        <!--==================== MAIN JS ====================-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+        <script src="/js/main.js"></script>
+
+
+
+    </body>
 </html>
