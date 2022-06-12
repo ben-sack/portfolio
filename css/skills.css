@@ -55,7 +55,7 @@
     position: absolute;
     right: 0;
     width: 25px;
-    background: wheat;
+    background-color: transparent;
     opacity: 0.7;
     color: black;
     outline: none;
@@ -157,7 +157,7 @@
         position: absolute;
         right: 0;
         width: 25px;
-        background: wheat;
+        background-color: transparent;
         opacity: 0.7;
         color: black;
         outline: none;
@@ -232,7 +232,7 @@
         position: absolute;
         right: 0;
         width: 25px;
-        background: wheat;
+        background-color: transparent;
         opacity: 0.7;
         color: black;
         outline: none;

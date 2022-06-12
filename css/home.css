@@ -496,7 +496,7 @@ img {
   /* margin-top: 60%; */
 }
 .about__description p{
-  padding-top: 20%;
+  padding-top: 30%;
 }
 .about__subtitle{
   text-align: center;
@@ -593,7 +593,8 @@ img {
 
 /*==================== WORK ====================*/
 .work__container {
-  row-gap: 5rem;
+  margin-top: 5rem;
+  row-gap: 4rem;
 }
 
 .work__img {
@@ -1214,7 +1215,7 @@ img {
    height: 200px;
  }
  .work__container{
-  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: repeat(2, 1fr);
   column-gap: 5rem;
   margin-top: 0;
   justify-content: center;
