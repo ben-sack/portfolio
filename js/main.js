@@ -7,7 +7,11 @@ const navMenu = document.getElementById('nav-menu'),
 /* Validate if constant exists */
 if(navToggle){
     navToggle.addEventListener('click', () =>{
-        navMenu.classList.add('show-menu')
+        if(navMenu.classList.contains('show-menu')){
+            navMenu.classList.remove('show-menu')
+        } else {
+            navMenu.classList.add('show-menu')
+        }
     })
 }
 
@@ -18,6 +22,7 @@ if(navClose){
         navMenu.classList.remove('show-menu')
     })
 }
+
 
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link')
@@ -40,7 +45,7 @@ function scrollActive(){
         const sectionHeight = current.offsetHeight
         const sectionTop = current.offsetTop - 50;
         sectionId = current.getAttribute('id')
-
+        
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
         }else{
@@ -107,7 +112,7 @@ const sr = ScrollReveal({
 //     reset: true
 });
 
-sr.reveal('.welcome__content, .arrows',{}); 
+sr.reveal('.welcome__content, .mouse_scroll',{interval: 100}); 
 sr.reveal('.about__description, .work__img',{interval: 100}); 
 sr.reveal('.skills__img',{interval: 100}); 
 
