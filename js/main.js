@@ -2,16 +2,6 @@
 const navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),
     navClose = document.getElementById('nav-close')
-/*===== POPUP =====*/
-
-let popup = document.getElementById("popup");
-
-function openPopup(){
-    popup.classList.add("open-popup");
-}
-function closePopup(){
-    popup.classList.remove("open-popup");
-}
 
 /*===== MENU SHOW =====*/
 /* Validate if constant exists */
