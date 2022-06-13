@@ -111,7 +111,6 @@
         justify-content: center;
         margin-top: 5rem;
         padding: 2rem;
-        margin-top: 10rem;
     }
 
     .popup_container{
@@ -124,8 +123,8 @@
     
     }
     .popup{
-        width: 40rem;
-        height: 45rem;
+        width: 50rem;
+        height: 55rem;
         background: white;
         border-radius: 1rem;
         position: absolute;
@@ -142,7 +141,7 @@
     
     .open-popup{
         visibility: visible;
-        top: 30rem;
+        top: 35rem;
         transform: translate(-50%, -50%) scale(1);
         z-index: 10;
     }
