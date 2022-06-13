@@ -1,3 +1,14 @@
+/*===== Check for Device =====*/
+
+const skills = document.querySelectorAll(".skills__img");
+const isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+
+if (isMobile) {
+    for (let i = 0; i < skills.length; i++) {
+        skills[i].attributes.removeNamedItem("data-tilt")
+    }
+  }
+
 /*===== POPUP =====*/
 
 let popup = document.getElementById("popup");
