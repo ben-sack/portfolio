@@ -174,8 +174,8 @@
 @media screen and (max-width: 398px){
 
     .skills__container {
-        row-gap: 1rem;
-        column-gap: 1rem;
+        row-gap: 0;
+        column-gap: 0;
         justify-content: center;
         margin-top: 2rem;
         padding: 2rem;
@@ -202,7 +202,7 @@
         justify-content: center;
     }
     .nav__list{
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3,3fr);
     }
     .page__title{
         font-size: 20px;

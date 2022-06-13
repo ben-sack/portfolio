@@ -114,5 +114,5 @@ const sr = ScrollReveal({
 
 sr.reveal('.welcome__content, .mouse_scroll',{interval: 100}); 
 sr.reveal('.about__description, .work__img',{interval: 100}); 
-sr.reveal('.skills__img',{interval: 100}); 
+sr.reveal('.contact__information, .contact__content, .button',{interval: 250}); 
 
