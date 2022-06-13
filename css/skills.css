@@ -178,7 +178,7 @@
         row-gap: 1rem;
         column-gap: 1rem;
         justify-content: center;
-        margin-top: 5rem;
+        margin-top: 2rem;
         padding: 2rem;
         grid-template-columns: repeat(3,3fr)
     }
@@ -237,7 +237,7 @@
     
     .open-popup{
         visibility: visible;
-        top: 40%;
+        top: 50%;
         transform: translate(-50%, -50%) scale(1);
         z-index: 10;
     }
