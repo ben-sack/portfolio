@@ -116,3 +116,7 @@ sr.reveal('.welcome__content, .mouse_scroll',{interval: 100});
 sr.reveal('.about__description, .work__img',{interval: 100}); 
 sr.reveal('.contact__information, .contact__content, .button',{interval: 250}); 
 
+function submit(){
+    let submit = document.getElementsByClassName("contact__form");
+    submit[0].submit();
+}
