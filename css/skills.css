@@ -1,6 +1,9 @@
 .active-link{
     color: orange;
   }
+.nav_link{
+    
+}
 
 /*==================== SKILLS ====================*/
 
@@ -197,7 +200,7 @@
         width: 100px;
         height: 100px;
     }
-    .nav__lin{
+    .nav__link{
         text-align: center;
         justify-content: center;
     }
