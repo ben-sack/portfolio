@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hit me up!</title>
     <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/contact.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script> src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"</script>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
 </head>
@@ -26,12 +29,12 @@
                             <i class="uil uil-estate nav__icon"></i>
                         </a>
                     </li>
-                    <!-- <li class="nav__item">
+                    <li class="nav__item">
                         <a href="/skills/" class="nav__link">
                             <i class="uil uil-brackets-curly nav__icon"></i>
                             <span class="nav__text">skills</span>
                         </a>
-                    </li> -->
+                    </li>
                     <li class="nav__item">
                         <a href="#contact" class="nav__link">
                             <i class="uil uil-message nav__icon"></i>
@@ -52,10 +55,12 @@
             </div>
             
         </nav>
-    </header
+    </header>
     <!--==================== CONTACT ME ====================-->
     <section class="contact section" id="contact">
-
+        <div class="popup">
+            <h2>test</h2>
+        </div>
         <div class="contact__container container grid">
             <div>
                 <div class="contact__information">
@@ -81,35 +86,70 @@
                 </div>
             </div>
 
-            <form action="/db/submit.php" method="POST" class="contact__form grid">
+            <form method="post" action="/db/submit.php" class="contact__form grid">
                 <div class="contact__inputs grid">
                     <div class="contact__content">
                         <label type="text"  class="contact__label">Name</label>
-                        <input type="text" name="name" class="contact__input">
+                        <input type="text" name="name" id="name" class="contact__input">
                     </div>
                     <div class="contact__content">
                         <label type="email" class="contact__label">Email</label>
-                        <input type="email" name="email" class="contact__input">
+                        <input type="email" name="email" id="email" class="contact__input">
                     </div>
                     <div class="contact__content">
                         <label type="text" class="contact__label">Message</label>
-                        <textarea type="text" name="message" id="" cols="0" rows="7" class="contact__input"></textarea>
+                        <textarea type="text" name="message" id="message" cols="0" rows="7" class="contact__input"></textarea>
                     </div>
 
                     <div class="hover">
-                        <a style="cursor: pointer" onclick="submit()" target="_blank" class="button button--flex">
+                        <a id="forom__btn" style="cursor: pointer" onclick="submit()" class="button button--flex" data-rel="back">
                             Message
                             <i class="uil uil-message button__icon"></i>
                         </a>
                     </div>
             </form>
+
+
         </div>
+        <script>
+            $(function() {
+                // $('form').validate();
+                
+                function sendData($form){
+                    let dataString = $form.serialize();
+
+                    return $.ajax({
+                        type: $form.attr('method'),
+                        url: $form.attr('action'),
+                        data: dataString
+                    })
+                }
+                $( "form" ).on( "submit", function(e) {
+                
+                    var dataString = $(this).serialize();
+                    
+                    // alert(dataString); return false;
+                    sendData($(this)).done(function(){
+                        $(".contact__form").html('<div id="message"></div>');
+
+                        $("#message")
+                            .html("<h2>Contact Form Submitted!</h2>")
+                            .append("<p>We will be in touch soon.</p>")
+                            .hide()
+                            .fadeIn(1500)
+                    });
+                    e.preventDefault();
+                });
+            });
+        </script>
     </section>
     <footer class="footer">
         <p class="footer__copy">&#169; Sack </p>
     </footer>
 </body>
+
 <script src="https://unpkg.com/scrollreveal"></script>
 <script src="/js/main.js"></script>
+<script src="/js/contact.js"></script>
 
 </html>

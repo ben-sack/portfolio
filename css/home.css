@@ -89,7 +89,7 @@ body.dark-theme{
   --img-color: white;
   --opacity: 0.7;
   --shadow: grey;
-  --box-title: rainbow 5s infinite
+  --box-title: 0.6;
 }
 /*========== Button Dark/Light ==========*/
 
@@ -365,7 +365,7 @@ img {
 	margin: 0 auto;
 	width: 24px;
 	height: 100px;
-	margin-top: 40px;
+	margin-top: 10px;
   opacity: 0;
   animation-name: fadeIn;
   animation-duration: 3s;
@@ -590,7 +590,7 @@ img {
 }
 
 .box__icon{
-  animation: var(--box-title);
+  opacity: var(--box-title);
 }
 
 .box__description{
@@ -609,6 +609,15 @@ img {
 #rainbow {
   width: 300px;
   height: 300px;
+}
+
+@keyframes fade{
+  0%, 100% {opacity: 1; }
+  16.66% { opacity: 0; }
+  33.33% { opacity: 0.5; }
+  50% { opacity: 1; }
+  66.66% { opacity: 0.; }
+  83.33% { opacity: 0; }
 }
 
 @keyframes rainbow {
