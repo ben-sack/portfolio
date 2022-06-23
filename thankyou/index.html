@@ -10,8 +10,11 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
 </head>
-<body>
-    
+<body style="overflow: hidden; background-color: #2e2931">
+    <div style=" height: 0;" class="canvas_wrapper">
+        <canvas id="canvas"></canvas>
+        <script type="text/javascript" src="/js/balls.js"></script>
+    </div>
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
         <nav class="nav container">
@@ -44,7 +47,7 @@
             <div class="nav__btns">
                 <!-- Theme change button -->
 
-                <i class="uil uil-moon change-theme" id="theme-button"></i>
+                <!-- <i class="uil uil-moon change-theme" id="theme-button"></i> -->
 
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="uil uil-apps"></i>
@@ -56,6 +59,19 @@
 
     <section class="thankyou section" id="thankyou">
 
+        <div style="padding-top: 2rem;">
+            <h2 style="text-align: center; font-size: 20rem;">
+                Thank you!
+            </h2>
+        </div>
+        <div style="padding-top: 3rem; font-size: 1rem;">
+            <p style="text-align: center">
+                * messages will be collected and sent by email nightly
+            </p> 
+            <p style="text-align: center; padding-top: 1rem; font-size: 0.8rem;">
+                see how!
+            </p>
+        </div>
 
     </section>
     
