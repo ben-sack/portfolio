@@ -17,7 +17,11 @@ class ContactModel(BaseModel):
         if "@" in email and email.endswith(".com"):
             return email
         else:
-            return ""
+            return None
+
+    def prep_dict(self):
+
+        return self.dict(exclude_none=True)
 
 
 def get_users(db) -> List[ContactModel]:
@@ -37,8 +41,17 @@ def get_users(db) -> List[ContactModel]:
     return user_model
 
 
+def clean_users(users: List[ContactModel]) -> List[ContactModel]:
+    clean_users=[]
+    for user in users:
+        if user.email is not None:
+            clean_users.append(user)
+
+    return clean_users
+
 if "__main__" == __name__:
 
     db = "db/Contact.db"
     users = get_users(db)
+    users = clean_users(users=users)
     print(users)
