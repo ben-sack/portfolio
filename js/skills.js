@@ -175,3 +175,15 @@ const sr = ScrollReveal({
 });
 
 sr.reveal('.skills__img',{interval: 100}); 
+
+
+function hideData(){
+    let qData = document.getElementById('qdata')
+    let aData = document.querySelectorAll('.qualification__sections')
+
+    aData.forEach(i => {
+        if(i.classList.contains('hide-data')){
+            i.classList.remove('hide-data')
+        }else {i.classList.add('hide-data')}
+    })
+}

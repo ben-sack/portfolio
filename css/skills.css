@@ -2,7 +2,9 @@
     color: orange;
   }
 
-
+.hide-data{
+    display: none;
+}
 /*==================== QUALIFICATION ====================*/
 .qualification__tabs{
     display: flex;
@@ -15,9 +17,34 @@
     font-weight: var(--font-medium);
     cursor: pointer;
   }
+  @keyframes shake {
+    2%, 18% {
+        transform: translate3d(-2px, 0, 0);
+    }
+
+    4%, 16% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    6%, 10%, 14% {
+        transform: translate3d(-2px, 0, 0);
+    }
+
+    8%, 12% {
+        transform: translate3d(2px, 0, 0);
+    }
+    
+    18.1% {
+        transform: translate3d(0px, 0, 0);
+    }
+}
   
-  .qualification__button:hover{
-    color: var(--first-color);
+  .qualification__button{
+    animation-name: shake;
+    animation-delay: 0s;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
   }
   
   .qualification__icon{
@@ -260,7 +287,7 @@
     }
     .work__description{
         position: absolute;
-        left: 0;
+        text-align: left;
         margin-top: 1rem;
     }
     .skills__container {
