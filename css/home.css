@@ -1128,7 +1128,7 @@ img {
     right: 10%;
     text-align: center;
     padding-top: 0;
-    cursor:help;
+    cursor:pointer;
     /* color: var(--title-color); */
   }
   .nav__menu{

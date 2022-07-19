@@ -9,9 +9,37 @@ if (isMobile) {
     }
   }
 
-/*===== POPUP =====*/
+  /*==================== MENU SHOW Y HIDDEN ====================*/
+const navMenu = document.getElementById('nav-menu'),
+navToggle = document.getElementById('nav-toggle'),
+navClose = document.getElementById('nav-close')
 
-let popup = document.getElementById("popup");
+/*===== MENU SHOW =====*/
+/* Validate if constant exists */
+if(navToggle){
+navToggle.addEventListener('click', () =>{
+    navMenu.classList.add('show-menu')
+})
+}
+
+/*===== MENU HIDDEN =====*/
+/* Validate if constant exists */
+if(navClose){
+navClose.addEventListener('click', ()=>{
+    navMenu.classList.remove('show-menu')
+})
+}
+
+/*==================== REMOVE MENU MOBILE ====================*/
+const navLink = document.querySelectorAll('.nav__link')
+
+function linkAction(){
+const navMenu = document.getElementById('nav-menu')
+// When we click on each nav__link, we remove the show-menu class
+navMenu.classList.remove('show-menu')
+}
+navLink.forEach(n => n.addEventListener('click', linkAction))
+
 
 
 
@@ -19,170 +47,95 @@ function openPopup(id){
     var link = document.getElementById(id);
     if(link.id=="python"){
         let python = document.getElementById("popup python")
+        closePopup(id)
         python.classList.add("open-popup")
     }
     else if(link.id=="sql"){
         let sql = document.getElementById("popup sql")
+        closePopup(id)
         sql.classList.add("open-popup")
     }
     else if(link.id=="bash"){
         let bash = document.getElementById("popup bash")
+        closePopup(id)
         bash.classList.add("open-popup")
     }
     else if(link.id=="html"){
         let html = document.getElementById("popup html")
+        closePopup(id)
         html.classList.add("open-popup")
     }
     else if(link.id=="css"){
         let css = document.getElementById("popup css")
+        closePopup(id)
         css.classList.add("open-popup")
     }
     else if(link.id=="js"){
         let js = document.getElementById("popup js")
+        closePopup(id)
         js.classList.add("open-popup")
     }
     else if(link.id=="snowflake"){
         let snowflake = document.getElementById("popup snowflake")
+        closePopup(id)
         snowflake.classList.add("open-popup")
     }
     else if(link.id=="aws"){
         let aws = document.getElementById("popup aws")
+        closePopup(id)
         aws.classList.add("open-popup")
     }
     else if(link.id=="prefect"){
         let prefect = document.getElementById("popup prefect")
+        closePopup(id)
         prefect.classList.add("open-popup")
     }
     else if(link.id=="fivetran"){
         let fivetran = document.getElementById("popup fivetran")
+        closePopup(id)
         fivetran.classList.add("open-popup")
     }
     else if(link.id=="kafka"){
         let kafka = document.getElementById("popup kafka")
+        closePopup(id)
         kafka.classList.add("open-popup")
     }
     else if(link.id=="hvr"){
         let hvr = document.getElementById("popup hvr")
+        closePopup(id)
         hvr.classList.add("open-popup")
     }
     else if(link.id=="splunk"){
         let splunk = document.getElementById("popup splunk")
+        closePopup(id)
         splunk.classList.add("open-popup")
     }
     else if(link.id=="git"){
         let git = document.getElementById("popup git")
+        closePopup(id)
         git.classList.add("open-popup")
     }
     else if(link.id=="github"){
         let github = document.getElementById("popup github")
+        closePopup(id)
         github.classList.add("open-popup")
     }
 
 }
 
-
-/*==================== MENU SHOW Y HIDDEN ====================*/
-const navMenu = document.getElementById('nav-menu'),
-    navToggle = document.getElementById('nav-toggle'),
-    navClose = document.getElementById('nav-close')
-
-/*===== MENU SHOW =====*/
-/* Validate if constant exists */
-if(navToggle){
-    navToggle.addEventListener('click', () =>{
-        navMenu.classList.add('show-menu')
-    })
-}
-
-/*===== MENU HIDDEN =====*/
-/* Validate if constant exists */
-if(navClose){
-    navClose.addEventListener('click', ()=>{
-        navMenu.classList.remove('show-menu')
-    })
-}
-
-/*==================== REMOVE MENU MOBILE ====================*/
-const navLink = document.querySelectorAll('.nav__link')
-
-function linkAction(){
-    const navMenu = document.getElementById('nav-menu')
-    // When we click on each nav__link, we remove the show-menu class
-    navMenu.classList.remove('show-menu')
-}
-navLink.forEach(n => n.addEventListener('click', linkAction))
-
 /*===== POPUP =====*/
 
-function closePopup(id){
+function closePopup(){
     let links = document.querySelectorAll(".popup")
 
-    for (let i = 0; i < links.length; i++) {
-
-        if(links.id=="python");{
-            let python = document.getElementById("popup python");
-            python.classList.remove("open-popup");
-        } 
-        if(links.id=="sql");{
-            let sql = document.getElementById("popup sql");
-            sql.classList.remove("open-popup");
-        }
-        if(links.id=="bash");{
-            let bash = document.getElementById("popup bash");
-            bash.classList.remove("open-popup");
-        } 
-        if(links.id=="html");{
-            let html = document.getElementById("popup html");
-            html.classList.remove("open-popup");
-        }
-        if(links.id=="css");{
-            let css = document.getElementById("popup css");
-            css.classList.remove("open-popup");
-        } 
-        if(links.id=="js");{
-            let js = document.getElementById("popup js");
-            js.classList.remove("open-popup");
-        }
-        if(links.id=="snowflake");{
-            let snowflake = document.getElementById("popup snowflake");
-            snowflake.classList.remove("open-popup");
-        } 
-        if(links.id=="aws");{
-            let aws = document.getElementById("popup aws");
-            aws.classList.remove("open-popup");
-        }
-        if(links.id=="prefect");{
-            let prefect = document.getElementById("popup prefect");
-            prefect.classList.remove("open-popup");
-        } 
-        if(links.id=="fivetran");{
-            let fivetran = document.getElementById("popup fivetran");
-            fivetran.classList.remove("open-popup");
-        }
-        if(links.id=="kafka");{
-            let kafka = document.getElementById("popup kafka");
-            kafka.classList.remove("open-popup");
-        }
-        if(links.id=="hvr");{
-            let hvr = document.getElementById("popup hvr");
-            hvr.classList.remove("open-popup");
-        }
-        if(links.id=="splunk");{
-            let splunk = document.getElementById("popup splunk");
-            splunk.classList.remove("open-popup");
-        }
-        if(links.id=="git");{
-            let git = document.getElementById("popup git");
-            git.classList.remove("open-popup");
-        }
-        if(links.id=="github");{
-            let github = document.getElementById("popup github");
-            github.classList.remove("open-popup");
-        }
-      }
-
+    links.forEach(link => {
+        link.classList.remove("open-popup")
+    })
 }
 
+// let container = document.querySelector('.skills__container')
+
+// container.addEventListener('click', closePopup, true); 
 /*==================== DARK LIGHT THEME ====================*/ 
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'

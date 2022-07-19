@@ -1,1 +1,45 @@
 /*  TODO: add css for phones */
+
+.thankyou_title{
+    padding-top: 2rem;
+    font-size: 10rem;
+}
+.thankyou_message{
+    padding-top: 3rem;
+    font-size: 1rem;
+}
+
+
+.rainbow{
+    animation: rainbow 3s infinite
+}
+@keyframes rainbow {
+    0%, 100% { color: blue;opacity: 1; }
+    16.66% { color: red;opacity: 0.5; }
+    33.33% { color: green;opacity: 0.5; }
+    50% { color: yellow;opacity: 1; }
+    66.66% { color: pink;opacity: 0.5.; }
+    83.33% { color: purple;opacity: 0.5; }
+  }
+
+
+@media screen and (max-width: 390px) {
+    #thankyou{
+        position: fixed;
+    }
+    .thankyou_title{
+        font-size: 4.5rem;
+    }
+    .thankyou_message{
+        padding-top: 3rem;
+        font-size: 0.9rem;
+    }
+    .canvas_wraper{
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        left: 0;
+    }
+    
+}
+
