@@ -372,12 +372,9 @@ img {
   animation-delay: 1s;
   animation-fill-mode: forwards;
   color: var(--social-color);
+  margin-top: 30px;
 }
 
-.move-scroll-up{
-  margin-top: 30px;
-  transition: 2s;
-}
 
 .hide-scroll{
   animation: fadeOut 3s forwards;
