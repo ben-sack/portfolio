@@ -129,10 +129,11 @@
     border-radius: 1rem;
     position: absolute;
     top: 0;
-    left: 50%;transform: translate(-50%,-50%) scale(0.3);
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.3);
     text-align: center;
     padding: 0 30px 30px;
-    opacity: 0.9;
+    opacity: 1;
     color: #333;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     visibility: hidden;
@@ -225,7 +226,7 @@
     }
     .popup{
         width: 50rem;
-        height: 55rem;
+        height: 45rem;
         background: white;
         border-radius: 1rem;
         position: absolute;
@@ -233,7 +234,7 @@
         left: 50%;transform: translate(-50%,-50%) scale(0.3);
         text-align: center;
         padding: 0 30px 30px;
-        opacity: 0.9;
+        opacity: 0.97;
         color: #333;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         visibility: hidden;
