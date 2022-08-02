@@ -86,7 +86,7 @@ body.dark-theme{
   --container-color: hsl(var(--hue-color),29%, 16%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
-  --img-color: white;
+  --img-color: #b1a6a4;
   --opacity: 0.7;
   --shadow: grey;
   --box-title: 0.6;
@@ -1333,7 +1333,7 @@ img {
    height: 200px;
  }
  .work__container{
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   column-gap: 5rem;
   margin-top: 0;
   justify-content: center;
