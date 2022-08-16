@@ -187,8 +187,8 @@
 .skills__img img {
     transition: 1s;
     text-align: center;
-    width: 200px;
-    height: 200px;
+    width: 175px;
+    height: 175px;
 }
 
 .skills__img img:hover {
@@ -231,7 +231,8 @@
         border-radius: 1rem;
         position: absolute;
         top: 0;
-        left: 50%;transform: translate(-50%,-50%) scale(0.3);
+        left: 50%;
+        transform: translate(-50%,-50%) scale(0.3);
         text-align: center;
         padding: 0 30px 30px;
         opacity: 0.97;
@@ -243,7 +244,7 @@
     
     .open-popup{
         visibility: visible;
-        top: 35rem;
+        top: 25rem;
         transform: translate(-50%, -50%) scale(1);
         z-index: 10;
     }
