@@ -26,7 +26,7 @@
     --img-color: white;
     --opacity: 1;
     --shadow: rgba(14, 36, 49, 0.15);
-    --box-title: None;
+    --box-title: black;
 
 
     /*========== Font and typography ==========*/
@@ -89,7 +89,7 @@ body.dark-theme{
   --img-color: #b1a6a4;
   --opacity: 0.7;
   --shadow: grey;
-  --box-title: 0.6;
+  --box-title: white;
 }
 /*========== Button Dark/Light ==========*/
 
@@ -585,7 +585,7 @@ img {
 }
 
 .box__icon{
-  opacity: var(--box-title);
+  color: var(--box-title);
 }
 
 .box__description{
