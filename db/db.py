@@ -1,15 +1,14 @@
 import sqlite3
 from typing import Any, List
-from pydantic import BaseModel, parse_obj_as, validator
+from pydantic import BaseModel, parse_obj_as, validator, EmailStr
 import pandas as pd
-import json
 
 
 class ContactModel(BaseModel):
-    id: Any
-    name: Any
+    id: int
+    name: str
     email: Any
-    message: Any
+    message: str
 
     @validator("email")
     @classmethod
@@ -20,7 +19,6 @@ class ContactModel(BaseModel):
             return None
 
     def prep_dict(self):
-
         return self.dict(exclude_none=True)
 
 

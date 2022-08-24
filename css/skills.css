@@ -85,6 +85,14 @@
     background-color: var(--first-color);
     border-radius: 50%;
   }
+
+  .full__stop{
+    display: inline-block;
+    /* text-align: center; */
+    width: 13px;
+    height: 1px;
+    background-color: var(--first-color);
+  }
   
   .qualification__line{
     display: block;
@@ -386,6 +394,7 @@
 
 
 img {
+    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     -ms-transform: translateZ(0); /* IE 9 */
     -webkit-transform: translateZ(0); /* Chrome, Safari, Opera */
