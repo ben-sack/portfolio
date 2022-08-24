@@ -180,7 +180,6 @@
 .section{
     padding: 0;
     height: 100vh;
-    /* overflow: hidden; */
 }
 
 .skills__img {
@@ -188,7 +187,6 @@
     border-radius: .5rem;
     text-align: center;
     width: 110%;
-    /* opacity: var(--opacity); */
     background-color: var(--img-color)
 }
 
@@ -393,7 +391,7 @@
 }
 
 
-img {
+img, a {
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     -ms-transform: translateZ(0); /* IE 9 */
@@ -401,7 +399,7 @@ img {
     transform: translateZ(0);
 }
 
-img {
+img, a {
     image-rendering: -moz-crisp-edges;         /* Firefox */
     image-rendering:   -o-crisp-edges;         /* Opera */
     image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */

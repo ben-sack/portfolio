@@ -1,7 +1,5 @@
-/*==================== GOOGLE FONTS ====================*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-
 /*==================== VARIABLES CSS ====================*/
+
 :root {
     --header-height: 3rem;
 
@@ -160,22 +158,6 @@ img {
   height: 100vh;
 }
 
-.section__title {
-  font-size: var(--h1-font-size);
-  color: var(--title-color);
-}
-
-.section__subtitle {
-  display: block;
-  font-size: var(--small-font-size);
-  margin-bottom: var(--mb-3);
-}
-
-.section__title, 
-.section__subtitle {
-  text-align: center;
-}
-
 /*==================== LAYOUT ====================*/
 .container {
   max-width: 768px;
@@ -329,26 +311,8 @@ img {
   top: 0;
 }
 .welcome__content{
-  /* opacity: 0; */
-  /* animation-name: fadeIn; */
-  /* animation-duration: 3s; */
-  /* animation-delay: 1s; */
   animation-fill-mode: forwards;
   color: var(--social-color);
-}
-
-@keyframes fadeInOut {
-  0% {opacity:0;}
-  50% {opacity:1;}
-  100% {opacity:0;}
-}
-@keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-@keyframes fadeOut {
-  0% {opacity:1;}
-  100% {opacity:0;}
 }
 
 /*==================== Scroll  ====================*/
@@ -490,6 +454,19 @@ img {
   color: var(--first-color-alt);
 }
 
+@keyframes fadeInOut {
+  0% {opacity:0;}
+  50% {opacity:1;}
+  100% {opacity:0;}
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+@keyframes fadeOut {
+  0% {opacity:1;}
+  100% {opacity:0;}
+}
 
 /*==================== BUTTONS ====================*/
 .button{
@@ -529,51 +506,6 @@ img {
 }
 .about__description p{
   padding-top: 30%;
-}
-.about__subtitle{
-  text-align: center;
-  margin-top: 10vh;
-}
-
-.about__buttons{
-  display: flex;
-  justify-content: center;
-  margin-top: 55%;
-  width: 100%;
-  position: absolute;
-  text-align: center;
-  align-items: center;
-  align-content: center;
-}
-.page__title{
-  margin-left: 1.2rem;
-}
-.about__grid{
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 1rem; 
-  margin-top: 15vh;
-  align-items: center;
-  text-align: center;
-  /* overflow: hidden; */
-  
-}
-
-.box{
-  width: 100%;
-  padding: 1rem;
-  text-align: center;
-  transform-style: preserve-3d;
-  opacity: 0.5;
-  border-radius: 1rem;
-
-}
-
-.box p{
-  cursor: pointer;
-  color: var(--social-color);
-  font-size: var(--font-medium);
 }
 
 .box__title{
@@ -1066,9 +998,6 @@ img {
   .section{
     padding: 6rem 0 2rem;
   }
-  .section__subtitle{
-    margin-bottom: 4rem;
-  }
 
   .header{
     top: 0;
@@ -1169,9 +1098,6 @@ img {
   .about__info{
     justify-content: space-between;
   }
-  .about__buttons{
-    justify-content: initial;
-  }
   .skills__container{
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
@@ -1248,9 +1174,7 @@ img {
   .section{
     padding: 6rem 0 2rem;
   }
-  .section__subtitle{
-    margin-bottom: 4rem;
-  }
+
   .page__title{
     margin-left: 20rem;
   }
@@ -1304,9 +1228,7 @@ img {
   .about__description{
     margin-top: 5%;
   }
-  .about__grid{
-    column-gap: 0; 
-  }
+
   .box{
     padding: 0;
     border: 1px;
