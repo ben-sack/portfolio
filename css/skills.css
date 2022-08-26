@@ -88,7 +88,8 @@
 
   .full__stop{
     display: inline-block;
-    /* text-align: center; */
+    position: relative;
+    top: -2.5px;
     width: 13px;
     height: 1px;
     background-color: var(--first-color);
@@ -280,7 +281,7 @@
 
 }
 
-@media screen and (max-width: 398px){
+@media screen and (max-width: 420px){
     .qualification__tabs{
         margin-bottom: 0;
 
@@ -292,6 +293,15 @@
     .qualification__icon{
         font-size: 1.5rem;
 
+    }
+    .qualification__title{
+        font-size: 0.8rem;
+    }
+    .qualification__subtitle{
+        font-size: 0.5rem;
+    }
+    .qualification__calendar{
+        font-size: 0.3rem;
     }
     .work__description{
         position: absolute;
