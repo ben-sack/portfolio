@@ -283,7 +283,7 @@
 
 @media screen and (max-width: 420px){
     .qualification__tabs{
-        margin-bottom: 0;
+        margin-bottom: 2rem;
 
     }
     .qualification__data{
