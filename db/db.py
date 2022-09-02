@@ -1,3 +1,4 @@
+import os
 import sqlite3
 from typing import Any, List
 from pydantic import BaseModel, parse_obj_as, validator, EmailStr
@@ -49,7 +50,7 @@ def clean_users(users: List[ContactModel]) -> List[ContactModel]:
 
 if "__main__" == __name__:
 
-    db = "db/Contact.db"
+    db = os.getenv("db")
     users = get_users(db)
     users = clean_users(users=users)
     print(users)
