@@ -1,6 +1,6 @@
 import os
 import sqlite3
-from typing import Any, List
+from typing import List
 from pydantic import BaseModel, parse_obj_as, validator, EmailStr
 import pandas as pd
 
@@ -8,16 +8,8 @@ import pandas as pd
 class ContactModel(BaseModel):
     id: int
     name: str
-    email: Any
+    email: EmailStr
     message: str
-
-    @validator("email")
-    @classmethod
-    def valid_email(cls, email):
-        if "@" in email and email.endswith(".com"):
-            return email
-        else:
-            return None
 
     def prep_dict(self):
         return self.dict(exclude_none=True)
