@@ -734,7 +734,53 @@
             <div  class="popup" id="popup hvr">
                 <button onclick="closePopup()" type="button">x</button>
                 <h2 style="color: black;">HVR</h2>
-                <p>gg</p>
+                <div class="qualification__container container">
+                    <div class="qualification__tabs">
+                        <div onclick="hideData()" class="qualification__button button--flex qualification__active" data-target="#education">
+                            <i class="uil uil-briefcase-alt qualification__icon"></i>
+                        </div>
+                    </div>
+                    <div class="qualification__sections hide-data" id="qdata">
+                        <!--==================== QUALIFICATION CONTENT 1====================-->
+                        <div class="qualification__content" data-content id="education">
+                            <!--==================== QUALIFICATION 1====================-->
+                            <div class="qualification__data">
+
+                                <div style="text-align: right; margin-right: 0.4rem;">
+                                    <h3 class="qualification__title">Progressive</h3>
+                                    <span class="qualification__subtitle"> Senior Data Engineer </span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2021-Present
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                            <!--==================== QUALIFICATION 2====================-->
+                            <div style="text-align: left;" class="qualification__data">
+                                <div></div>
+                                <div>
+                                    <span class="full__stop"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work__description" data-target="#work">
+                        <p>
+                            → Automation ⚙️
+                        </p>
+                        <p>
+                            → Vendor Relations 🫂
+                        </p>
+                        <p>
+                            → Customer Success 🤝
+                        </p>
+                    </div>
+                </div>
             </div>
             <div  class="popup" id="popup splunk">
                 <button onclick="closePopup()" type="button">x</button>
