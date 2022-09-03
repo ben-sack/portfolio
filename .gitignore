@@ -1,8 +1,0 @@
-.DS_Store
-.AppleDouble
-.LSOverride
-logs
-*.log
-npm-debug.log*
-temp.html
-.vscode/**
