@@ -1,14 +1,34 @@
 /*  TODO: add css for phones */
 
-.thankyou_title{
+/* .thankyou_title{
     padding-top: 2rem;
     font-size: 10rem;
 }
 .thankyou_message{
     padding-top: 3rem;
     font-size: 1rem;
-}
+} */
 
+#thankyou{
+    position: fixed;
+}
+.thankyou_title{
+    font-size: 10rem;
+    padding-top: 5rem;
+    text-align: center;
+    width: 100vw;
+
+}
+.thankyou_message{
+    padding-top: 3rem;
+    font-size: 1rem;
+}
+.canvas_wraper{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
 
 .rainbow{
     animation: rainbow 3s infinite
