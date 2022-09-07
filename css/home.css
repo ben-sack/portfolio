@@ -478,7 +478,6 @@ img {
 
 .button:hover{
   opacity: 0.5;
-  /* transform: scale(1.4) */
 }
 .button__icon{
   font-size: 1.25rem;
@@ -502,14 +501,12 @@ img {
 
 .about__description{
   text-align: center;
-  /* margin-top: 60%; */
 }
 .about__description p{
   padding-top: 30%;
 }
 
 .box__title{
-  /* padding: 5rem; */
   color: black;
   font-size: 4rem; 
   font-family: var(--body-font);
@@ -527,17 +524,6 @@ img {
 }
 
 
-#rainbow {
-/* background: rgb(2,0,36); */
-  color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(112,226,255,1) 0%, rgba(0,212,255,1) 0%, rgba(243,243,255,1) 0%, rgba(243,243,255,1) 0%, rgba(243,243,255,1) 0%, rgba(106,226,255,1) 100%);
-  animation: rainbow 6s infinite;
-}
-
-#rainbow {
-  width: 300px;
-  height: 300px;
-}
-
 @keyframes fade{
   0%, 100% {opacity: 1; }
   16.66% { opacity: 0; }
@@ -547,18 +533,9 @@ img {
   83.33% { opacity: 0; }
 }
 
-@keyframes rainbow {
-  0%, 100% { color: blue;opacity: 1; }
-  16.66% { color: red;opacity: 0; }
-  33.33% { color: green;opacity: 0.5; }
-  50% { color: yellow;opacity: 1; }
-  66.66% { color: pink;opacity: 0.; }
-  83.33% { color: purple;opacity: 0; }
-}
 
 .skills__close .skills__list{
   height: 0;
-  /* overflow: hidden;  */
 }
 
 .skills__open .skills__list{
@@ -571,7 +548,6 @@ img {
 }
 
 .section-title {
-  /* position: absolute; */
   color: var(--social-color);
   margin-top: var(--mb-2);
   margin-bottom: var(--mb-4);
@@ -584,18 +560,7 @@ img {
   animation-fill-mode: forwards;
   padding-bottom: 0;
 }
-/* .section-title::after {
-  position: absolute;
-  content: '';
-  width: 310px;
-  height: 0.18rem;
-  left: 0;
-  right: 0;
-  margin: auto;
-  opacity: 0.5;
-  top: 4.5rem;
-  background-color: var(--social-color);
-} */
+
 
 .bd-grid {
   max-width: 1024px;
@@ -915,8 +880,6 @@ img {
   .qualification__data{
     gap: .5rem;
   }
-  /* NEED TO ADD SERVICES */
-
 }
 
 /* For medium devices */
