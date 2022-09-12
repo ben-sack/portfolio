@@ -962,6 +962,14 @@ img {
   padding-top: 1rem;
 }
 
+.personal__image{
+  max-width: 75vw;
+  text-align: center;
+  position: relative;
+  left: 2rem;
+  top: 3rem;
+  border-radius: 1rem;
+}
 }
 
 @media screen and (min-width: 768px) {
@@ -1259,6 +1267,14 @@ img {
   animation-duration: 1s;
   animation-fill-mode: forwards;
   padding-bottom: 1rem;
+}
+.personal__image{
+  max-width: 75vw;
+  text-align: center;
+  position: relative;
+  left: 2rem;
+  top: 3rem;
+  border-radius: 1rem;
 }
 }
 
