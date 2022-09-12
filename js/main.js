@@ -108,6 +108,15 @@ const cr = ScrollReveal({
 cr.reveal('.contact__information, .contact__content, .button',{interval: 250}); 
 sr.reveal('.skills__img',{interval: 100}); 
 
+const pr = ScrollReveal({
+    origin: 'left',
+    distance: '60px',
+    duration: 2000,
+    delay: 200,
+//     reset: true
+});
+pr.reveal('.personal__image')
+
 function submit(){
     let submit = document.getElementsByClassName("contact__form");
     submit[0].submit();
