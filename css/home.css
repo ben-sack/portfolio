@@ -1275,7 +1275,24 @@ img {
   left: 2rem;
   border-radius: 1rem;
   bottom: 5rem;
-  height: 50vh;
+  height: 70vh;
+}
+.personal__bio{
+  position: fixed;
+  top: 10rem;
+  text-align: right;
+  width: 70%;
+}
+.bio__title{
+  color: black;
+  font-size: 3rem;
+  position: relative;
+  right: 10rem;
+}
+.bio__text{
+  width: 30%;
+  text-align: right;
+  margin-left: 80%;
 }
 }
 
