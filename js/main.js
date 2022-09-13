@@ -115,7 +115,7 @@ const pr = ScrollReveal({
     delay: 200,
 //     reset: true
 });
-pr.reveal('.personal__image')
+pr.reveal('.personal__image',{interval: 250})
 
 function submit(){
     let submit = document.getElementsByClassName("contact__form");
