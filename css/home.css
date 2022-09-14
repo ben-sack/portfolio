@@ -910,7 +910,7 @@ img {
   }
   .bio__text{
     width: 30%;
-    text-align: right;
+    text-align: left;
     margin-left: 70%;
     font-size: 0.5rem;
   }
@@ -1003,7 +1003,7 @@ img {
 }
 .bio__text{
   width: 30%;
-  text-align: right;
+  text-align: left;
   margin-left: 80%;
 }
 }
@@ -1316,7 +1316,7 @@ img {
 .personal__bio{
   position: fixed;
   top: 10rem;
-  text-align: right;
+  /* text-align: right; */
   width: 70%;
 }
 .bio__title{
@@ -1324,11 +1324,13 @@ img {
   font-size: 3rem;
   position: relative;
   right: 10rem;
+  padding-bottom: 1rem;
 }
 .bio__text{
   width: 30%;
-  text-align: right;
-  margin-left: 80%;
+  text-align: left;
+  margin-left: 78%;
+  line-height: 2.2rem;
 }
 }
 
