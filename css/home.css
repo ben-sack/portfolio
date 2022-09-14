@@ -1354,10 +1354,10 @@ img {
   padding-bottom: 1rem;
 }
 .bio__text{
+  line-height: 2.2rem;
   width: 30%;
   text-align: left;
   margin-left: 78%;
-  line-height: 2.2rem;
 }
 }
 
