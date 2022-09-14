@@ -256,7 +256,8 @@ img {
  .nav__list{
    grid-template-columns: repeat(3, 1fr);
    gap: 0;
-   color: var(--social-color)
+   color: var(--social-color);
+   row-gap: 2.5rem;
  }
 
 .nav__link{
@@ -273,7 +274,7 @@ img {
 }
 
 .nav__icon{
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .nav__close{
