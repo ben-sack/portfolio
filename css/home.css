@@ -1187,7 +1187,34 @@ img {
 .peronal{
   grid-template-columns: repeat(2, 1fr);
 }
-
+.personal__image{
+  /* max-width: 100vw; */
+  text-align: center;
+  position: relative;
+  left: 2rem;
+  border-radius: 1rem;
+  bottom: 5rem;
+  height: 70vh;
+}
+.personal__bio{
+  position: fixed;
+  top: 10rem;
+  /* text-align: right; */
+  width: 70%;
+}
+.bio__title{
+  color: black;
+  font-size: 3rem;
+  position: relative;
+  right: 10rem;
+  padding-bottom: 1rem;
+}
+.bio__text{
+  width: 30%;
+  text-align: left;
+  margin-left: 78%;
+  line-height: 2.2rem;
+}
 }
 
 /* For large devices */
