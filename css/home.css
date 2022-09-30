@@ -580,6 +580,8 @@ img {
 .work__container {
   margin-top: 5rem;
   row-gap: 4rem;
+  grid-template-columns: repeat(2, 1fr);
+
 }
 
 .work__img {
@@ -864,6 +866,22 @@ img {
   .container{
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
+  }
+
+  .box__icon{
+    font-size: 2rem;
+  }
+
+  .box__title{
+    margin-top: -49%;
+  }
+  .box__description{
+    font-size: 1.4rem;
+    padding-top: 0;
+  }
+  .work__img{
+    width: 120px;
+    height: 90px;
   }
 
   .nav__menu{
